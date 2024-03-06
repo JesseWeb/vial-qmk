@@ -15,3 +15,5 @@ EXTRAKEY_ENABLE     = yes
 COMBO_ENABLE        = yes
 QMK_SETTINGS        = yes
 WS2812_DRIVER       = vendor
+SPLIT_KEYBOARD		= yes
+WPM_ENABLE 			= yes

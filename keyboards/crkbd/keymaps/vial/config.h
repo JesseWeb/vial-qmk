@@ -23,12 +23,28 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VIAL_KEYBOARD_UID {0xFD, 0xF6, 0xDD, 0xDF, 0x8E, 0x06, 0x97, 0xA6}
 /* Select hand configuration */
 
+
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 // #define EE_HANDS
 
 //#define QUICK_TAP_TERM 0
 //#define TAPPING_TERM 100
+//stuff slave must know
+#define SPLIT_LAYER_STATE_ENABLE
+#define SPLIT_LED_STATE_ENABLE
+#define SPLIT_MODS_ENABLE
+#define SPLIT_WPM_ENABLE
+#define SPLIT_TRANSPORT_MIRROR
+#define TAPPING_TERM 200
+// used for Tapping Term on thumb keys
+#define TAPPING_TERM_THUMB 125
+
+// If you press a dual-role key, press another key, and then release the
+// dual-role key, all within the tapping term, by default the dual-role key
+// will perform its tap action. If the HOLD_ON_OTHER_KEY_PRESS option is
+// enabled, the dual-role key will perform its hold action instead.
+#define HOLD_ON_OTHER_KEY_PRESS
 
 #ifdef RGBLIGHT_ENABLE
     #define RGBLIGHT_EFFECT_BREATHING
